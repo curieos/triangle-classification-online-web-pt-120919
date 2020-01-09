@@ -7,7 +7,11 @@ class Triangle
   end
   
   def kind
-    :equilateral
+    if a == b && b == c
+      :equilateral
+    else
+      :isosceles
+    end
   end
   
   class TriangleError < StandardError

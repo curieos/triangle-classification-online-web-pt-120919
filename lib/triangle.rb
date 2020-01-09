@@ -20,8 +20,12 @@ class Triangle
   
   def valid?
     less_than = @a <= 0 || @b <= 0 || @c <= 0
-    equality = false
+    equality = equality?(@a, @b, @v) || 
     less_than || equality
+  end
+  
+  def equality?(a, b, c)
+    a + b >= c
   end
   
   class TriangleError < StandardError

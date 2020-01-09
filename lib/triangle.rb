@@ -25,7 +25,7 @@ class Triangle
   end
   
   def equality?(a, b, c)
-    a + b >= c
+    a + b > c
   end
   
   class TriangleError < StandardError

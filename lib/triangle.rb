@@ -20,7 +20,7 @@ class Triangle
   
   def valid?
     less_than = @a <= 0 || @b <= 0 || @c <= 0
-    equality = true
+    equality = false
     if less_than && equality
   end
   

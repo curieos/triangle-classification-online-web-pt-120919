@@ -10,7 +10,7 @@ class Triangle
     if @a == @b && @b == @c
       :equilateral
     else
-      :isosceles
+      :scalene
     end
   end
   

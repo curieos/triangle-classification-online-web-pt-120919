@@ -19,7 +19,7 @@ class Triangle
   end
   
   def valid?
-    
+    @a <= 0 || @b <= 0 || @c <= 0
   end
   
   class TriangleError < StandardError

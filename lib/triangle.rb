@@ -6,6 +6,10 @@ class Triangle
     @c = c
   end
   
+  def kind
+    
+  end
+  
   class TriangleError < StandardError
     def message
       

@@ -7,7 +7,7 @@ class Triangle
   end
   
   def kind
-    if @a <= 0 || @b <= 0 || @c <= 0
+    if self.valid?
       raise TriangleError
     elsif @a == @b && @b == @c
       :equilateral
@@ -16,6 +16,10 @@ class Triangle
     else
       :scalene
     end
+  end
+  
+  def valid?
+    
   end
   
   class TriangleError < StandardError

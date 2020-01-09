@@ -19,7 +19,9 @@ class Triangle
   end
   
   def valid?
-    @a <= 0 || @b <= 0 || @c <= 0
+    less_than = @a <= 0 || @b <= 0 || @c <= 0
+    equality = 
+    if less_than && equality
   end
   
   class TriangleError < StandardError
